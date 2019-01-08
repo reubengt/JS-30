@@ -3,6 +3,8 @@ html{
   font-family: 'Helvetica Neue';
   text-align: center;
   font-size: 1vw;
+  margin: 0rem;
+  padding: 0rem;
 }
 body{
   font-size: 2rem;
@@ -17,8 +19,12 @@ body{
   height: 30rem;
   border: 1rem solid #F49E4C;
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 2rem;
+}
+.clock-face{
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .hand{
   width: 50%;
@@ -26,4 +32,9 @@ body{
   background: #AA4465;
   position: absolute;
   top: 50%;
+  margin-bottom: 0.2rem;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function:cubic-bezier(0.19, 2.83, 0.58, 1);
 }
