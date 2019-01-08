@@ -11,7 +11,9 @@ const secondHand = document.querySelector('.second-hand');
     }
     else{
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-    }
+    secondHand.style.transition="all 0.05s";
+    secondHand.style.transitionTimingFunction="cubic-bezier(0.19, 2.83, 0.58, 1)";
+  }
     const mins = now.getMinutes();
     const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
     if(mins==0){
@@ -20,6 +22,8 @@ const secondHand = document.querySelector('.second-hand');
     }
     else{
     minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+    minsHand.style.transition="all 0.05s";
+    minsHand.style.transitionTimingFunction="cubic-bezier(0.19, 2.83, 0.58, 1)";
     }
     const hour = now.getHours();
     const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
@@ -29,6 +33,8 @@ const secondHand = document.querySelector('.second-hand');
     }
     else{
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+    hourHand.style.transition="all 0.05s";
+    hourHand.style.transitionTimingFunction="cubic-bezier(0.19, 2.83, 0.58, 1)";
     }
   }
   setDate();
