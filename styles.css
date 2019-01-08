@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+}
+html{
+  background-color: coral;
+  line-height: 3rem;
+}
+h1, h2, h3, h4, h5, h6,li {
+   font-family: "Calibri", sans-serif;
+   margin: 20px;
+   font-style: normal;
+   font-weight:400;
+   color: #004060;
+}
+p{
+  font-family: "Palatino";
+  margin: 20px;
+}
