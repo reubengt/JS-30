@@ -23,7 +23,7 @@ const secondHand = document.querySelector('.second-hand');
     else{
     minsHand.style.transform = `rotate(${minsDegrees}deg)`;
     minsHand.style.transition="all 0.05s";
-    minsHand.style.transitionTimingFunction="cubic-bezier(0.19, 2.83, 0.58, 1)";
+    minsHand.style.transitionTimingFunction="ease";
     }
     const hour = now.getHours();
     const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
@@ -34,7 +34,7 @@ const secondHand = document.querySelector('.second-hand');
     else{
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
     hourHand.style.transition="all 0.05s";
-    hourHand.style.transitionTimingFunction="cubic-bezier(0.19, 2.83, 0.58, 1)";
+    hourHand.style.transitionTimingFunction="ease";
     }
   }
   setDate();

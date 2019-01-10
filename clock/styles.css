@@ -35,7 +35,6 @@ body{
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s;
-  transition-timing-function:cubic-bezier(0.19, 2.83, 0.58, 1);
 }
 .second-hand{
   height: 0.15rem;
@@ -45,4 +44,35 @@ body{
 }
 .min-hand{
   height: 0.4rem;
+}
+.number{
+  font-family: 'Montserrat', sans-serif;
+}
+#twelve{
+  position: absolute;
+  width: 1rem;
+  left: 50%;
+  margin-left: -0.5rem;
+  top: 0%;
+}
+#three{
+  position: absolute;
+  height: 1rem;
+  right: 0%;
+  top: 50%;
+  margin-top: -0.5rem;
+}
+#six{
+  position: absolute;
+  width: 1rem;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -0.5rem;
+}
+#nine{
+  position: absolute;
+  height: 1rem;
+  left: 0%;
+  top: 50%;
+  margin-top: -0.5rem;
 }
