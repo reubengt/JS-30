@@ -2,11 +2,11 @@
 :root{
   --base: #ffc600;
   --spacing: 10px;
-  --blur: 10px;
+  --blur: 0px;
 }
 img{
-  max-width: 70vw;
-  max-height: 70vh;
+  box-sizing:border-box;
+  max-width: 80vw;
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
