@@ -1,0 +1,34 @@
+/*style for declaring and assigning css variables*/
+:root{
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+img{
+  max-width: 70vw;
+  max-height: 70vh;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+.hl{
+  color: var(--base);
+}
+/*misc styles for other things*/
+body {
+  text-align: center;
+  background: #7871AA;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 3vw;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 50px;
+}
+input {
+  width: 20vw;
+}
