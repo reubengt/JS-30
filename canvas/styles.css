@@ -7,7 +7,9 @@ html, body{
   justify-content: center;
   align-items: center;
   }
-canvas{
+#draw{
+  margin: 0;
+  padding: 0;
   background: white;
   width: 80vw;
   height: 60vw;
