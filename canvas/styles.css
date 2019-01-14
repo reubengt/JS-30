@@ -1,0 +1,21 @@
+html, body{
+  height: 100vh;
+  margin:0;
+  background: #BCEBCB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+canvas{
+  background: white;
+  width: 80vw;
+  height: 60vw;
+  border: 8px solid #A44A3F;
+  border-radius: 3%;
+}
+h1, p{
+  color: #63585E;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
