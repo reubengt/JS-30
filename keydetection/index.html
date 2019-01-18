@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+  <div id=title> Type 'unicorn' to add unicorns. You heard me. GO!</div>
+  <style>
+    body{
+      height: 100vh;
+      background: linear-gradient(65deg, #BDA0BC 0%, #A06CD5 100%);
+      background-size: cover;
+      background-repeat: none;
+      display: flex;
+      justify-content: center;
+    }
+    #title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background: #6247AA;
+      width: 60vw;
+      height: 15vh;
+      font-family: 'Pacifico', cursive;
+      font-size: 4vh;
+      text-align: center;
+      margin-top: 50px;
+      border: 2px solid white;
+      border-radius: 4px;
+    }
+    </style>
+  <script>
+const pressed = [];
+const secretCode = 'unicorn';
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+  if (pressed.join('').includes(secretCode)) {
+    console.log('DING DING!');
+    cornify_add();
+  }
+  console.log(pressed);
+});
+</script>
+</body>
+</html>
