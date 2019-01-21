@@ -97,10 +97,6 @@ button{
 .strip {
   padding: 2rem;
   background: #E8C547;
-  border: 5px solid #E8C547;
-  border-top: none;
-  border-radius: 3px;
-  box-shadow: 0px 0px 3px 8px rgba(0,0,0,0.8);
 }
 
 .strip img {
