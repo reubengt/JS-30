@@ -5,6 +5,8 @@ const buttons = document.querySelectorAll('[data-time]');
 const reset = document.querySelector('#reset');
 const beep = document.querySelector('audio');
 function timer(seconds){
+  beep.pause();
+  beep.currentTime = 0;
   clearInterval(countdown);
   const now = Date.now();
   const then = now + seconds * 1000;
@@ -59,6 +61,6 @@ document.customForm.addEventListener('submit', function(e) {
 
 //fix for browser handling of vh(address bar show/hide)
 window.onresize = function(){
-    document.body.style.height = ${window.innerHeight}px;
+    document.body.style.height = `${window.innerHeight}px`;
 }
 window.onresize();
