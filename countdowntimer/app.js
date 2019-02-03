@@ -59,6 +59,6 @@ document.customForm.addEventListener('submit', function(e) {
 
 //fix for browser handling of vh(address bar show/hide)
 window.onresize = function(){
-    document.body.height = window.innerHeight;
+    document.body.style.height = ${window.innerHeight}px;
 }
-window.onresize(); 
+window.onresize();
